@@ -1,0 +1,28 @@
+CREATE TABLE last_name (
+    last_name INT PRIMARY KEY,
+    last_name VARCHAR,
+    );
+INSERT INTO (last_name) VALUES
+    ('Иванов'),
+    ('Петров'),
+    ('Сидоров')
+    );
+CREATE TABLE first_name (
+    first_name VARCHAR,
+    );
+INSERT INTO (first_name) VALUES
+    ('Иван'),
+    ('Петр'),
+    ('Сидор')
+    );
+CREATE TABLE otchestvo (
+    otchestvo VARCHAR,
+    );
+INSERT INTO (otchestvo) VALUES
+    ('Иванов'),
+    ('Петров'),
+    ('Сидоров')
+    );
+SELECT CONCAT(last_name, first_name, otchestvo)
+FROM last_name, first_name, otchestvo
+ORDER BY DESC;
